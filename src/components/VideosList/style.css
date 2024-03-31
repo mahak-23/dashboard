@@ -1,0 +1,124 @@
+.videos-container {
+  padding: 20px 20px 0px 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.filter-section-heading {
+  /* width: 100%; */
+  /* height: 38px; */
+  width: 180px;
+  height: calc(100vh - 114px);
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.filter-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ai-head {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  /* margin-top: 10px; */
+  padding: 2px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.other-videos {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.main-videos-container {
+  /* margin-top: 20px; */
+  border-radius: 8px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  position: relative;
+  height: calc(100vh - 90px);
+  width: calc(100vw - 180px);
+}
+
+.container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin: 0px 22px;
+  top: 10px;
+}
+
+.items-count {
+  color: #888;
+}
+
+.pagination-buttons span {
+  color: #888;
+}
+
+.pagination-buttons button {
+  transition: 0.5s ease;
+  padding: 4px 8px;
+  background: #ff6e34;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #ff6e34;
+}
+
+.pagination-buttons button:hover {
+  color: #ff6e34;
+  background: #fff;
+}
+
+.pagination-buttons button:disabled,
+.pagination-buttons button:disabled:hover {
+  background-color: #ccc;
+  color: #fff;
+  cursor: not-allowed;
+  border: 1px solid #ccc;
+}
+
+.videos-List-container {
+  max-height: calc(100% - 72px);
+  margin: 20px;
+  overflow: auto;
+  border: 2px solid #ccc;
+  position: relative;
+  border-radius: 8px;
+}
+
+.video-name:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #ff6e34;
+}
+
+.videos-List-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.videos-List-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 8px;
+  border: 2px solid #fff;
+}
+
+.videos-List-container::-webkit-scrollbar-thumb:hover {
+  background-color: #888;
+}
+
+.videos-List-container::-webkit-scrollbar-track {
+  background-color: transparent;
+}

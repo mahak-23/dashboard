@@ -1,0 +1,60 @@
+.main-header {
+  background: #fff4e9;
+  box-shadow: 0 0 6px 0.4px #d4cbc1;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  height: 38px;
+  padding: 4px 24px;
+  justify-content: space-between;
+}
+
+.app-logo {
+  display: flex;
+}
+
+.app-logo img {
+  height: 30px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-item {
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-item:hover {
+  color: #ff6e34;
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+.uni-logo {
+  display: flex;
+}
+
+.uni-logo img {
+  height: 30px;
+}
+
+.logout {
+  font-size: small;
+  transition: 0.5s ease;
+  padding: 4px 8px;
+  background: #ff6e34;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #ff6e34;
+}
+
+.logout:hover {
+  color: #ff6e34;
+  background: #fff;
+}

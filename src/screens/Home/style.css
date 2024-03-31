@@ -1,0 +1,33 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table thead {
+  background-color: #fff;
+  top: 0px;
+  position: sticky;
+}
+
+table thead tr th {
+  font-weight: 600;
+}
+
+table thead tr {
+  background-color: #f0f0f0;
+}
+
+tbody tr:hover {
+  background-color: #fff4e9;
+}
+
+table tbody {
+  font-size: 14px;
+}
+
+th,
+td {
+  padding: 4px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
