@@ -16,3 +16,10 @@ This project aims to create a web application with a dynamic dashboard featuring
 ### Task 4: Integrate MetaMask Wallet (Optional)
 
 **Objective:** Implement a feature to connect the MetaMask wallet using Web3 JS library, allowing users to interact with Ethereum-based decentralized applications directly from the web application.
+
+## Technologies Used
+
+- React.js: JavaScript library for building user interfaces
+- Echart.js: Library for creating interactive charts and graphs
+- Web3.js: JavaScript library for interacting with Ethereum blockchain
+- CSS Flexbox/Grid: For responsive layout and styling
