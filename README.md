@@ -23,3 +23,10 @@ This project aims to create a web application with a dynamic dashboard featuring
 - Echart.js: Library for creating interactive charts and graphs
 - Web3.js: JavaScript library for interacting with Ethereum blockchain
 - CSS Flexbox/Grid: For responsive layout and styling
+
+## Live Demo
+ - Access the live demo of the application ([here](https://dashboard-trades.netlify.app/)).
+
+## Additional Notes
+- Ensure that you have Node.js and npm installed on your system.
+- For MetaMask integration (Task 4), make sure to install the MetaMask
