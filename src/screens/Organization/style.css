@@ -1,0 +1,87 @@
+.organization-page {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.organization-details {
+  margin-top: 20px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.organization-page h2 {
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+  background: linear-gradient(to right, green, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.1rem;
+}
+
+.organization-details p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.details {
+  margin-top: 10px;
+}
+
+.detail {
+  margin-bottom: 10px;
+  color: aliceblue;
+  font-weight: 300;
+  display: flex;
+  gap: 10px;
+}
+
+.detail strong {
+  color: rgb(203, 193, 193);
+}
+
+.detail a {
+  color: blue;
+  text-decoration: none;
+}
+
+.detail a:hover {
+  text-decoration: underline;
+}
+
+.about-card {
+  margin-top: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-card h3,
+.organization-details h3 {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+  color: aliceblue;
+  border-bottom: 2px solid #a6a4a4;
+  width: 100%;
+  justify-content: center;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.about-card p {
+  color: #ccc;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-card,
+  .organization-details {
+    width: 100%;
+  }
+}

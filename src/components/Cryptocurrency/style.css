@@ -1,0 +1,35 @@
+.crypto-card {
+  width: 100%;
+}
+
+.crypto-prices {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+}
+
+.crypto-price {
+  color: aliceblue;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 8px 16px;
+  text-align: center;
+  background: #2b2a2a;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.crypto-price:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.crypto-price h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.crypto-price h5 {
+  color: rgb(203, 193, 193);
+  font-size: 12px;
+  margin-bottom: 6px;
+}

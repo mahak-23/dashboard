@@ -1,24 +1,63 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Provider } from "react-redux";
+import store from "./store";
+
+//style
+import "./App.css";
+
+//components
+import SideNavBar from "./screens/SideNavBar";
+import Dashboard from "./screens/Dashboard";
+import Trades from "./screens/Trades";
+import History from "./screens/History";
+import Organization from "./screens/Organization";
 
 function App() {
+  const [navVisible, showNavbar] = useState(true);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Provider store={store}>
+        <div className="App">
+          <SideNavBar visible={navVisible} show={showNavbar} />
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <div className={!navVisible ? "page" : "page page-with-navbar"}>
+                  <Dashboard />
+                </div>
+              }
+            />
+            <Route
+              path="/organization"
+              element={
+                <div className={!navVisible ? "page" : "page page-with-navbar"}>
+                  <Organization />
+                </div>
+              }
+            />
+            <Route
+              path="/trades"
+              element={
+                <div className={!navVisible ? "page" : "page page-with-navbar"}>
+                  <Trades />
+                </div>
+              }
+            />
+            <Route
+              path="/history"
+              element={
+                <div className={!navVisible ? "page" : "page page-with-navbar"}>
+                  <History />
+                </div>
+              }
+            />
+          </Routes>
+        </div>
+      </Provider>
+    </BrowserRouter>
   );
 }
 

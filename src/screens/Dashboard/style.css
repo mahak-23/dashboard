@@ -1,42 +1,74 @@
-.dashboard-header {
-  padding: 12px;
+.graphs-container,
+.dashboard-container {
+  width: 100%;
   display: flex;
-  justify-content: center;
-}
-
-.download-field {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  margin-top: 2px;
-  gap: 10px;
-  padding: 0px 12px 8px 12px;
+  gap: 1rem;
+  flex-direction: column;
 }
 
 .dashboard-container {
-  padding: 14px;
-  height: calc(100vh - 128px);
+  height: 100%;
 }
 
-.download-button {
-  transition: 0.5s ease;
-  padding: 8px 16px;
-  background: #ff6e34;
-  color: #fff;
-  border-radius: 8px;
-  cursor: pointer;
-  border: 1px solid #ff6e34;
+.graphs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 12px;
 }
 
-.download-button:hover {
-  color: #ff6e34;
-  background: #fff;
+.dashboard-head {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
 }
 
-.download-button:disabled,
-.download-button:disabled:hover {
-  background-color: #ccc;
-  color: #fff;
-  cursor: not-allowed;
-  border: 1px solid #ccc;
+.dashboard-head .title h2 span {
+  margin-left: 0.5rem;
+  background: linear-gradient(to right, green, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 0.2rem;
+}
+
+.dashboard-head .title h3 span {
+  margin-left: 0.5rem;
+  color: greenyellow;
+  font-family: "Permanent Marker", cursive;
+  letter-spacing: 0.2rem;
+}
+
+.card-header {
+  color: aliceblue;
+  border-bottom: 2px solid #a6a4a4;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-header h2 {
+  font-weight: 400;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+  .dashboard-head {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .dashboard-head .title h1 span {
+    display: block;
+    margin: 1rem 0;
+  }
+
+  .graphs-container {
+    flex-direction: column;
+  }
 }
