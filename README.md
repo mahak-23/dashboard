@@ -24,6 +24,8 @@ This project aims to create a web application with a dynamic dashboard featuring
 - Web3.js: JavaScript library for interacting with Ethereum blockchain
 - CSS Flexbox/Grid: For responsive layout and styling
 
+### Node.js v16.20.0
+
 ## Live Demo
  - Access the live demo of the application ([here](https://dashboard-trades.netlify.app/)).
 
